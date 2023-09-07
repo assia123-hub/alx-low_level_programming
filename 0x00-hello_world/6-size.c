@@ -1,8 +1,11 @@
 #include <stdio.h>
 
          /**
-         * main prints the size of various types
-         * on the computer it is compiled and run on
+         *main - entry point
+	 *
+	 * prints the size of various types on the computer it is compiled and run on
+	 *
+	 * return : always 0
          */
 int main(void)
 {
