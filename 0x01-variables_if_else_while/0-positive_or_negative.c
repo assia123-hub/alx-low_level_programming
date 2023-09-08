@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <time.h>
+
  /**
  * main - if the number is greater than 0: is positive
  *        if the number is 0: is zero
@@ -12,15 +14,15 @@ int main(void)
 
         if (n > 0)
         {
-                printf("is positive\n");
+                printf("is positive\n", n);
         }
         if (n == 0)
         {
-                printf("is zero\n");
+                printf("is zero\n", n);
         }
         if (n < 0)
         {
-                printf("is negative\n");
+                printf("is negative\n", n);
         }
         return (0);
 }
