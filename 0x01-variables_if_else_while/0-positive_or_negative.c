@@ -5,6 +5,8 @@
  * main - if the number is greater than 0: is positive
  *        if the number is 0: is zero
  *        if the number is less than 0: is negative
+ *
+ *        return:0
  */
 int main(void)
 {
@@ -16,11 +18,11 @@ int main(void)
         {
                 printf("is positive\n", n);
         }
-        if (n == 0)
+	else if (n == 0)
         {
                 printf("is zero\n", n);
         }
-        if (n < 0)
+	else (n < 0)
         {
                 printf("is negative\n", n);
         }
