@@ -1,17 +1,24 @@
-#include <unistd.h>
-
+#include <stdio.h>
+/**
+ * main - prints all possible combinations of single digit numbers.
+ *
+ * return 0
+ */
 int main(void)
 {
-        int i;
+	int i = '0';
 
-        i = 0;
-        while (i <= 9);
-        {
-                putchar(',');
-                putchar(' ');
-                putchar('0' + 1);
-        }
-        i++;
-        putchar('\n');
-        return (0);
+	while (i <= '9')
+	{
+		putchar(i);
+		if (i != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		++i;
+	}
+	putchar('\n');
+	return (0);
+
 }

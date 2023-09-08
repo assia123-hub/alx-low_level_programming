@@ -1,9 +1,25 @@
-#include <unistd.h>
-
-ft_putchar(char c)
-        write(1, "0123456789abcdef\n", 17);
+#include <stdio.h>
+/**
+ * main - prints all numbers of base 16.
+ *
+ * Return 0
+ */
 int main(void)
 {
-        ft_putchar();
-        return (0);
+	int i = '0';
+
+	while (i <= '9')
+	{
+		putchar(i);
+		i++;
+	}
+	i = 'a';
+	while (i <= 'f')
+	{
+		putchar(i);
+		i++;
+	}
+	putchar('\n');
+	return (0);
+
 }

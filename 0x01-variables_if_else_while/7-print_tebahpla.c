@@ -1,10 +1,18 @@
-#include <unistd.h>
-
-ft_putchar(char c)
-        write(1, "zyxwvutsrqponmlkjihgfedcba\n", 27);
+#include <stdio.h>
+/**
+ * main - prints the alphabet in reverse.
+ *
+ * Return 0
+ */
 int main(void)
 {
-        ft_putchar();
-        return (0);
-}
+	char c = 'z';
 
+	while (c >= 'a')
+	{
+		putchar(c);
+		c--;
+	}
+	putchar('\n');
+	return (0);
+}

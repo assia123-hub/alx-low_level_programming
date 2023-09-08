@@ -1,10 +1,25 @@
-#include <unistd.h>
-
-ft_putchar(char c)
-        write(1, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\n", 53);
-//main prints the alphabet in  lowercase  and then in uppercase
+#include <stdio.h>
+/**
+ * main - Prints the alphabet in lowercase, then in uppercase.
+ *
+ * Return: 0
+ */
 int main(void)
 {
-        ft_putchar();
-        return (0);
+	char c = 'a';
+	char i = 'A';
+
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
+	while (d <= 'Z')
+	{
+		putchar(i);
+		i++;
+	}
+	putchar('\n');
+	return (0);
+
 }

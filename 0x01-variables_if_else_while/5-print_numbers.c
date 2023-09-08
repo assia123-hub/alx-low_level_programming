@@ -1,8 +1,11 @@
-#include <unistd.h>
-
+#include <stdio.h>
+/**
+ * main - Prints the numbers.
+ *
+ * Return:0
+ */
 int main(void)
 {
-        write(1, "0123456789\n", 11);
-       return (0);
+	printf("0123456789\n");
+	return (0);
 }
-
