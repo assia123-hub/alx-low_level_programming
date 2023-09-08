@@ -8,21 +8,21 @@
  * You are not allowed to use any variable of type `char`.
  * Return: 0
  */
-$int main(voi)
+int main(void)
 {
-	int i = '0';
+	int i = 0;
 
-	while (i <= '9')
+	while (i < 10)
 	{
-		putchar(i);
-		if (i != '9')
+		putchar(i + '0');
+		if (i < 9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		++i;
+		i++;
 	}
 	putchar('\n');
-	return (0);
 
+	return (0);
 }

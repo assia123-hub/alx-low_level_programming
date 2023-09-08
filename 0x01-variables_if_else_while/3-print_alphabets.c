@@ -1,24 +1,23 @@
 #include <stdio.h>
 /**
- * main - princippal function
+ * main - main block
  * Description: Print the alphabet in lowercase and uppercase on same line
- * using putchar only thrice
+ * using putchar only thrice, followed by new line
  * Return: 0
  */
 int main(void)
 {
-	char c = 'a';
-	while (c <= 'z')
+	char alpha = 'a';
+	while (alpha <= 'z')
 	{
-		putchar(c);
-		c++;
+		putchar(alpha);
+		alpha++;
 	}
-	c = 'A';
-	while (c <= 'Z')
+	alpha = 'A';
+	while (alpha <= 'Z')
 	{
-		putchar(c);
-		c++;
+		putchar(alpha);
+		alpha++;
 	}
-	putchar('\n');
-	return (0);
+	putchar('\n');return (0);
 }
