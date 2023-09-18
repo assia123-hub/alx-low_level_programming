@@ -1,23 +1,20 @@
 #include "main.h"
 
 /**
- * main -  prints n elements of an array of integers, followed by a new line.
- *         Numbers must be separated by comma, followed by a space
- *         The numbers should be displayed in the same order as they are stored in the array and using printf
- *
- *         return : always 0.
+ * print_array - prints n elements of an array of integers.
+ * @a: input array.
+ * @n: input n elements
+ * Return: no return.
  */
 void print_array(int *a, int n)
 {
 	int i;
 
-	i = 0;
-	while (a[i] != 0)
+	for (i= 0; i < n; i++)
 	{
-		printf("%d", &a[i]);
-		printf("%d,");
-		printf("%d ");
-		i++;
+		printf("%d", a[i]);
+		if (i != (n - 1))
+			printf(", ");
 	}
-	printf("%d\n");;
+	printf("\n");
 }
