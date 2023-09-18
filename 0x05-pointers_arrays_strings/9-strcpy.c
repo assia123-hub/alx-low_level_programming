@@ -8,17 +8,15 @@
  *
  * Return: a copy of the src.
  */
-char *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, const char *src)
 {
-	int i;
+	int i = 0;
 
-	i = 0;
-	while (*src != '\0')
+	while (src[i])
 	{
-		dest[i] = src[];
+		dest[i] = src[i];
 		i++;
-		src++;
 	}
+
 	return (dest);
 }
-
