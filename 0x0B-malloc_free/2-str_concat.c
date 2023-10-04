@@ -1,42 +1,50 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
-
+#include <stdlib.h>
 /**
- * str_concat - concatenate two numbers
- * @s1: char 1
- * @s2: char 2
- *
- * Return: char concatenate
- */
+* str_concat - function that concatenates two strings.
+* @s1: string 1.
+* @s2: string 2.
+* Return: a concatenated string.
+*/
 char *str_concat(char *s1, char *s2)
 {
-	char *res;
-	int i = 0, j = 0, cont, k = 0;
+char *ch;
+int i, j, k;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-	while (s1[i])
+i = 0;
+j = 0;
+k = 0;
+	if (s1 != NULL)
 	{
+		while (s1[i])
+		{
 		i++;
+		}
 	}
-	while (s2[j])
+	if (s2 != NULL)
 	{
+		while (s2[j])
+		{
 		j++;
+		}
 	}
-	k = i + j + 1;
-	res = malloc(k * sizeof(char));
-	if (res == NULL)
-		return (NULL);
-	for (cont = 0; cont < i; cont++)
+ch = malloc((i + j + 1) * sizeof(char));
+	if (ch == NULL)
 	{
-		res[cont] = s1[cont];
+	return (NULL);
 	}
-	for (cont = 0; cont <= j; cont++)
-	{
-		res[cont + i] = s2[cont];
-	}
-	return (res);
 
+	while (k < i)
+	{
+	ch[k] = s1[k];
+	k++;
+	}
+
+	while (k < i + j)
+	{
+	ch[k] = s2[k - i];
+	k++;
+	}
+	ch[k + 1] = '\0';
+	return (ch);
+}
